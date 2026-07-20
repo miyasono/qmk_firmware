@@ -1,0 +1,402 @@
+{
+  "name": "EPOMAKER TH40",
+  "vendorId": "0x36B0",
+  "productId": "0x304E",
+  "lighting": "vialrgb",
+  "matrix": {
+    "rows": 5,
+    "cols": 12
+  },
+  "customKeycodes": [
+    {
+      "name": "2.4G",
+      "title": "Set to 2.4G working mode",
+      "shortName": "MD_24G"
+    },
+    {
+      "name": "BLE1",
+      "title": "Set to Bluetooth Channel 1",
+      "shortName": "MD_BLE1"
+    },
+    {
+      "name": "BLE2",
+      "title": "Set to Bluetooth Channel 2",
+      "shortName": "MD_BLE2"
+    },
+    {
+      "name": "BLE3",
+      "title": "Set to Bluetooth Channel 3",
+      "shortName": "MD_BLE3"
+    },
+    {
+      "name": "USB",
+      "title": "Set to USB working mode",
+      "shortName": "MD_USB"
+    },
+    {
+      "name": "BAT",
+      "title": "Query battery status",
+      "shortName": "QK_BAT"
+    },
+    {
+      "name": "WinLock",
+      "title": "Lock the Windows key",
+      "shortName": "QK_WLO"
+    },
+    {
+      "name": "6N/NKRO",
+      "title": "Toggle 6KRO/NKRO",
+      "shortName": "SIX_N"
+    },
+    {
+      "name": "TestCol",
+      "title": "RGB test colour",
+      "shortName": "TEST_CL"
+    },
+    {
+      "name": "2.4G Pair",
+      "title": "Pair 2.4G dongle",
+      "shortName": "PR_24G"
+    },
+    {
+      "name": "BLE1 Pair",
+      "title": "Pair Bluetooth Channel 1",
+      "shortName": "PR_BLE1"
+    },
+    {
+      "name": "BLE2 Pair",
+      "title": "Pair Bluetooth Channel 2",
+      "shortName": "PR_BLE2"
+    },
+    {
+      "name": "BLE3 Pair",
+      "title": "Pair Bluetooth Channel 3",
+      "shortName": "PR_BLE3"
+    },
+    {
+      "name": "DebugSw",
+      "title": "Debug mode switch",
+      "shortName": "DBG_SW"
+    },
+    {
+      "name": "Mac/Win",
+      "title": "Mac/Windows mode switch",
+      "shortName": "MW_CH"
+    }
+  ],
+  "layouts": {
+    "keymap": [
+      [
+        {
+          "c": "#cccccc"
+        },
+        {
+          "w": 1.5,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "0,0",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,1",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,2",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,3",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,4",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,5",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,6",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,7",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,8",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,9",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,10",
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.5,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "1,11"
+      ],
+      [
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.75,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,0",
+        {
+          "c": "#cccccc"
+        },
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,1",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,2",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,3",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,4",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,5",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,6",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,7",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,8",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,9",
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 2.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "2,10"
+      ],
+      [
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,0",
+        {
+          "c": "#cccccc"
+        },
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,1",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,2",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,3",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,4",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,5",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,6",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,7",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,8",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,9",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,10",
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.75,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "3,11"
+      ],
+      [
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,0",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,2",
+        {
+          "w": 1.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,3",
+        {
+          "c": "#cccccc"
+        },
+        {
+          "w": 2.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,4",
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,6",
+        {
+          "c": "#cccccc"
+        },
+        {
+          "w": 2.75,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,7",
+        {
+          "c": "#aaaaaa"
+        },
+        {
+          "w": 1.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,8",
+        {
+          "w": 1.0,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,9",
+        {
+          "w": 1.25,
+          "h": 1.0,
+          "x": 0.0
+        },
+        "4,10"
+      ]
+    ]
+  }
+}
