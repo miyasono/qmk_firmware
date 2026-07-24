@@ -30,11 +30,12 @@
 #define VIAL_UNLOCK_COMBO_ROWS {0, 2}
 #define VIAL_UNLOCK_COMBO_COLS {0, 10}
 
-// 12 dynamic layers: 12*5*12*2 = 1440 bytes of keymap storage.
-// Grow emulated EEPROM to fit (2 x 8KB flash pages hold up to ~4KB of
-// 16-bit vars in steady state; vendor private page is separate at 0x1BE00).
+// 8 dynamic layers: 8*5*12*2 = 960 bytes of keymap storage.
+// Emulated EEPROM kept at 2560 bytes; the space freed vs 12 layers goes to
+// macros (2 x 8KB flash pages hold up to ~4KB of 16-bit vars in steady
+// state; vendor private page is separate at 0x1BE00).
 #undef DYNAMIC_KEYMAP_LAYER_COUNT
-#define DYNAMIC_KEYMAP_LAYER_COUNT 12
+#define DYNAMIC_KEYMAP_LAYER_COUNT 8
 #undef EEPROM_SIZE
 #define EEPROM_SIZE 2560
 #undef DYNAMIC_KEYMAP_EEPROM_MAX_ADDR
