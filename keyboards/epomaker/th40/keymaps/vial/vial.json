@@ -82,6 +82,11 @@
       "name": "Mac/Win",
       "title": "Mac/Windows mode switch",
       "shortName": "MW_CH"
+    },
+    {
+      "name": "AltTab",
+      "title": "AHK-style Alt+Tab: hold layer, tap to cycle, release layer to commit",
+      "shortName": "AT_TAB"
     }
   ],
   "layouts": {

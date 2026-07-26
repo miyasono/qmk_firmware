@@ -66,6 +66,9 @@ void keyboard_post_init_user(void) {
     kb_keyboard_post_init();
 }
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
+    if (!process_record_user(keycode, record)) {
+        return false;
+    }
     return kb_process_record_common(keycode, record);
 }

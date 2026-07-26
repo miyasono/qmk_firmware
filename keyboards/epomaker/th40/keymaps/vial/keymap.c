@@ -48,3 +48,36 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 // clang-format on
+
+// AHK再現: 無変換レイヤーのTabでAlt+Tabウィンドウ巡回 (Super Alt-Tab)。
+// 初回押下でAltを保持したままTabを送出し、以降のタップはTabのみ送出するので
+// 1ウィンドウずつ進める。レイヤーを抜けた瞬間 (=無変換を離した瞬間) に
+// Altを解放してウィンドウを確定する。Shift併用で逆順。
+#define AT_TAB (QK_KB + 15) // vial.json customKeycodes[15] "AltTab"
+#define ATAB_LAYER 2        // 無変換 LT2 のレイヤー
+
+static bool atab_active = false;
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (keycode == AT_TAB) {
+        if (record->event.pressed) {
+            if (!atab_active) {
+                atab_active = true;
+                register_code(KC_LALT);
+            }
+            register_code(KC_TAB);
+        } else {
+            unregister_code(KC_TAB);
+        }
+        return false;
+    }
+    return true;
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    if (atab_active && !layer_state_cmp(state, ATAB_LAYER)) {
+        atab_active = false;
+        unregister_code(KC_LALT);
+    }
+    return state;
+}
